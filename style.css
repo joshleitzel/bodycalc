@@ -1,0 +1,87 @@
+body {
+  font: 15px 'helvetica neue', helvetica, arial, sans-serif;
+  margin: 3em 0;
+}
+a:link, a:visited, a:active {
+  color: #324D73;
+}
+a:hover {
+  color: #000;
+}
+p {
+  line-height: 1.5;
+}
+h1, h2 {
+  font-weight: bold;
+  margin: 1em;
+}
+h1 {
+  font-size: 175%;
+}
+h2 {
+  color: #114791;
+  font-size: 130%;
+}
+#content {
+  margin: 0 auto;
+  width: 960px;
+}
+#measurements {
+  float: left;
+  width: 45%;
+}
+#desc {
+  font-style: italic;
+  margin: 2em;
+}
+form {
+  margin: 2em;
+}
+.field {
+  margin: 1em 0;
+}
+  .field .label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  .field input[type=text] {
+    background: #eee;
+    border: 1px solid #eee;
+    font-size: 100%;
+    padding: 0.5em;
+    width: 35px;
+  }
+
+#results {
+  background: #EDF3FA;
+  float: right;
+  font-size: 120%;
+  width: 55%;
+}
+.result {
+  margin: 1.5em 2em;
+}
+  .result label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  .result span {
+    color: #7B838F;
+  }
+  .result .required-measurements {
+    font-size: 80%;
+    color: #8F9194;
+  }
+  .result .notes {
+    font-size: 60%;
+    font-style: italic;
+    margin-top: 0.5em;
+  }
+
+footer {
+  clear: both;
+  font-size: 80%;
+  padding: 2em;
+}

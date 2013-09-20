@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="lib/reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="lib/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/underscore-min.js"></script>
+  <script type="text/javascript" src="lib/backbone-min.js"></script>
+  <script type="text/javascript" src="lib/Backbone.ModelBinder.min.js"></script>
+  <script type="text/javascript" src="lib/mustache.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+  <div id="content"> 
+    <h1>Body Calculator</h1>
+    <div id="measurements">
+      <p id="desc">Enter as much information as you can. Calculations appear on the right as you type. Your inputs are never stored or communicated to a server.</p>
+      <form>
+        <fieldset class="field">
+          <legend class="label">Units</legend>
+          <input id="units_metric" type="radio" name="units" value="metric" />
+          <label for="units_metric">Metric</label>
+          <input id="units_imperial" type="radio" name="units" value="imperial" />
+          <label for="units_imperial">Imperial</label>
+        </fieldset>
+        <div class="field">
+          <label for="weight" class="label">Weight</label>
+          <input id="weight" type="text" name="weight" maxlength="3" />
+          <span name="weight_label"></span>
+        </div>
+        <fieldset class="field">
+          <legend class="label">Height</legend>
+          <div class="field">
+            <input id="height1" type="text" name="height1" maxlength="1" />
+            <label for="height1" name="height1_label"></label>
+            <input id="height2" type="text" name="height2" maxlength="2" />
+            <label for="height2" name="height2_label"></label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="age" class="label">Age</label>
+          <input id="age" type="text" name="age" maxlength="2" />
+        </div>
+        <fieldset class="field">
+          <legend class="label">Sex</legend>
+          <input id="sex_male" type="radio" name="sex" value="male" />
+          <label for="sex_male">Male</label>
+          <input id="sex_female" type="radio" name="sex" value="female" />
+          <label for="sex_female">Female</label>
+        </fieldset>
+      </form>
+    </div>
+    <div id="results">
+      <h2>Your Results</h2>
+    </div>
+    <footer>
+      <p>By <a href="https://twitter.com/joshleitzel">Josh Leitzel</a>. <a href="https://github.com/joshleitzel/bodycalc">Open source</a> under the MIT license.</p>
+    </footer>
+  </div>
+</body>
+</html>
