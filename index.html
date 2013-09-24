@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <head>
+  <title>BodyCalc</title>
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
   <link rel="stylesheet" href="lib/reset.css" />
   <link rel="stylesheet" href="style.css" />
+
   <script type="text/javascript" src="lib/jquery.min.js"></script>
   <script type="text/javascript" src="lib/underscore-min.js"></script>
   <script type="text/javascript" src="lib/backbone-min.js"></script>
@@ -13,7 +18,7 @@
   <div id="content"> 
     <h1>Body Calculator</h1>
     <div id="measurements">
-      <p id="desc">Enter as much information as you can. Calculations appear on the right as you type. Your inputs are never stored or communicated to a server.</p>
+      <p id="desc">Enter as much information as you can. Calculations appear instantly. Your inputs are never stored or communicated to a server.</p>
       <form>
         <fieldset class="field">
           <legend class="label">Units</legend>
@@ -24,21 +29,21 @@
         </fieldset>
         <div class="field">
           <label for="weight" class="label">Weight</label>
-          <input id="weight" type="text" name="weight" maxlength="3" />
+          <input id="weight" type="number" name="weight" maxlength="3" />
           <span name="weight_label"></span>
         </div>
         <fieldset class="field">
           <legend class="label">Height</legend>
           <div class="field">
-            <input id="height1" type="text" name="height1" maxlength="1" />
+            <input id="height1" type="number" name="height1" maxlength="1" />
             <label for="height1" name="height1_label"></label>
-            <input id="height2" type="text" name="height2" maxlength="2" />
+            <input id="height2" type="number" name="height2" maxlength="2" />
             <label for="height2" name="height2_label"></label>
           </div>
         </fieldset>
         <div class="field">
           <label for="age" class="label">Age</label>
-          <input id="age" type="text" name="age" maxlength="2" />
+          <input id="age" type="number" name="age" maxlength="2" />
         </div>
         <fieldset class="field">
           <legend class="label">Sex</legend>

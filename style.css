@@ -13,22 +13,39 @@ p {
 }
 h1, h2 {
   font-weight: bold;
-  margin: 1em;
 }
 h1 {
   font-size: 175%;
+  padding: 0 1em;
 }
 h2 {
   color: #114791;
   font-size: 130%;
+  padding: 1em;
 }
 #content {
   margin: 0 auto;
-  width: 960px;
 }
-#measurements {
-  float: left;
-  width: 45%;
+#results {
+  background: #EDF3FA;
+  font-size: 120%;
+  padding: 1em 0;
+}
+#content, #measurements, #results {
+  width: 100%;
+}
+@media screen and (min-width: 321px) {
+  #content {
+    width: 750px;
+  }
+  #measurements {
+    float: left;
+    width: 45%;
+  }
+  #results {
+    float: right;
+    width: 55%;
+  }
 }
 #desc {
   font-style: italic;
@@ -45,22 +62,16 @@ form {
     font-weight: bold;
     margin-bottom: 0.5em;
   }
-  .field input[type=text] {
+  .field input[type=number] {
     background: #eee;
     border: 1px solid #eee;
     font-size: 100%;
     padding: 0.5em;
-    width: 35px;
+    width: 45px;
   }
 
-#results {
-  background: #EDF3FA;
-  float: right;
-  font-size: 120%;
-  width: 55%;
-}
 .result {
-  margin: 1.5em 2em;
+  margin: 1em 2em;
 }
   .result label {
     display: block;
